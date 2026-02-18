@@ -1,0 +1,38 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List Modular</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main class="app" aria-label="Aplicacao de tarefas">
+      <header class="app-header">
+        <h1>Lista de Tarefas</h1>
+        <p>DOM modular, estado centralizado e persistencia local.</p>
+      </header>
+
+      <form id="task-form" class="task-form" novalidate>
+        <label for="task-input">Nova tarefa</label>
+        <div class="task-form-row">
+          <input
+            id="task-input"
+            name="task"
+            type="text"
+            placeholder="Ex.: Revisar projeto"
+            autocomplete="off"
+            required
+          />
+          <button type="submit">Adicionar</button>
+        </div>
+      </form>
+
+      <p id="message" class="message" role="status" aria-live="polite"></p>
+
+      <ul id="task-list" class="task-list" aria-label="Lista de tarefas"></ul>
+    </main>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
